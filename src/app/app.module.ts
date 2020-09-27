@@ -12,3 +12,5 @@ import { NavbarComponent } from './common/navbar/navbar.component';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+// このファイルは、app.routing.module.tsを読み込んでいる
