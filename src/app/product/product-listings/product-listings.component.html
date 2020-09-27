@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm" *ngFor="let product of products; index as productId">
+      <a [routerLink]="[productId]">
+        <div class="card">
+          <img src="{{ product.coverImage }}" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">{{ product.description }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- <a [routerLink]="['/detail']"> から<a [routerLink]="['detail']"> にすることで今いる場所からの相対パスに変換できる  -->
